@@ -475,8 +475,6 @@ int main(int argc, char *argv[])
 		cout << "memoryUsage (bytes):" << memoryUsage << endl;
 		fprintf(fp, "memoryUsage (bytes): %d \n\n", memoryUsage);
 		cout << "Average Regret Ratio: " <<  minArr << endl;
-		cout << "Output Points: " << endl;
-		fprintf(fp, "Output Points: \n");
         
         //calculating more statistics
         for (int i = 0; i < samplingSize; i++)
