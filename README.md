@@ -1,4 +1,4 @@
-#Greedy-Shrink for Solving FAM
+# Greedy-Shrink for Solving FAM
 
 This package contains the source code for the Greedy-Shrink algorithm discussed in: S. Zeighami and R. C.-W. Wong, “Finding average regret ratio minimizing set in database,” arXiv preprint: https://arxiv.org/abs/1810.08047
 
@@ -9,8 +9,10 @@ We have used "Boost library" (www.boost.org) in our program for random sampling 
 Usage Step
 ===========
 a. Compilation
+
 	g++ -o run -I . arr.cpp
 b. Execution
+
 	./run PointsFile k n d N
 Where PointsFile contains the all the points in the dataset, k is the size of the solution returned, n is the size of the dataset, d is the dimensionality of the dataset and N is the sample size. The algorithm assumes a uniform distribution of linear utility funcitons and samples N utility functions from that distribution.
 In the output file, you can see the results of the algorithm. "Average number of points avoided" shows the number of points avoided (for which the average regret ratio was not calculated) in each iteration averaged over the total number of iterations using the optimization techniques and improvements described in section 5.4 of the paper. "Average number of users avoided" shows the number of utility functions avoided (when calculating the avergae regret ratio) in each iteration averaged over the total number of iterations using the optimization techniques.
@@ -20,6 +22,7 @@ The dataset should contain n points in d dimensions. Each point must be written 
 
 Example (The hotel example from the paper):
 The dataset contains 4 points in 3 dimensions. Use
+
 	./run ExamplePoints.txt 2 4 3 10000
 
 	./run ExamplePoints.txt 2 4 3 4 ExampleUtilityFunctions.txt
