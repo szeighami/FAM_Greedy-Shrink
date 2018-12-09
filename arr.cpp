@@ -1,17 +1,15 @@
-#include<iostream>
-#include<string.h>
-#include<fstream>
-#include<algorithm>
-#include<math.h>
-#include<vector>
+#include <iostream>
+#include <string.h>
+#include <fstream>
+#include <algorithm>
+#include <math.h>
+#include <vector>
 #include <stdlib.h>
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/uniform_real_distribution.hpp>
 #include <boost/random/uniform_real.hpp>
 #include <boost/random/variate_generator.hpp>
 #include <boost/random/random_device.hpp>
-#include <lp/data_utility.h>
-#include <lp/evaluate.h>
 #include <time.h>
 #include <stdio.h>
 
